@@ -18,4 +18,10 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/img_wapa"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new Activity"
+        android:onClick="loadNewActivity" />
+
 </RelativeLayout>
