@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Wapa</string>
+    <string name="title_activity_password_recovery">PasswordRecoveryActivity</string>
 </resources>
