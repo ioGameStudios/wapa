@@ -13,35 +13,42 @@
     <HorizontalScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/horizontalScrollView">
+        android:id="@+id/horizontalScrollView"
+        android:fillViewport="true">
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/scroll"
-            android:measureWithLargestChild="false">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/service0"
-                android:src="@mipmap/service0"/>
-
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/service1"
-                android:src="@mipmap/service1"/>
+                android:id="@+id/service0ImageButton"
+                android:src="@mipmap/service0"
+                android:scaleType="center"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:contentDescription="Service0"
+                android:nestedScrollingEnabled="false" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/service1ImageButton"
+                android:src="@mipmap/service1"
+                android:scaleType="center"
+                android:adjustViewBounds="true"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/service2ImageButton"
+                android:src="@mipmap/service2"
+                android:scaleType="center"
+                android:adjustViewBounds="true"/>
+
         </LinearLayout>
     </HorizontalScrollView>
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Agendar Cita"
-        android:id="@+id/toDateSelectionButton"
-        android:layout_gravity="center_vertical" />
 
 </RelativeLayout>
