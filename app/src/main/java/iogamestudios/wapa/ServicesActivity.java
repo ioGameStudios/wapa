@@ -20,7 +20,7 @@ public class ServicesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_services);
 
         //toDateSelectionButton = (Button)findViewById(R.id.toDateSelectionButton);
-        service0ImageButton = (ImageButton)findViewById(R.id.service0ImageButton);
+        /*service0ImageButton = (ImageButton)findViewById(R.id.service0ImageButton);
 
         service0ImageButton.setOnClickListener(
                 new View.OnClickListener() {
@@ -29,7 +29,7 @@ public class ServicesActivity extends AppCompatActivity {
                         loadDateSelectionView();
                     }
                 }
-        );
+        );*/
     }
 
     void loadDateSelectionView(){

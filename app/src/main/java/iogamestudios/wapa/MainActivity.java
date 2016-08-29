@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements android.location.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("MSG", Storage.test);
+        loadServiceSelectionActivity();
+        /*
         if (Storage.alreadyLogin) {
             loadServicesActivity();
         }
@@ -76,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements android.location.
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
-        googleApiClient = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        googleApiClient = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();*/
     }
 
 
@@ -92,6 +94,11 @@ public class MainActivity extends AppCompatActivity implements android.location.
         startActivity(intent);
     }
 
+    void loadServiceSelectionActivity (){
+        Log.d("MSG", "Loading service selection");
+        Intent intent = new Intent(this, ServiceSelection.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onResume() {
@@ -132,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements android.location.
 
     }
 
-    @Override
+    /*@Override
     public void onStart() {
         super.onStart();
 
@@ -150,9 +157,9 @@ public class MainActivity extends AppCompatActivity implements android.location.
                 Uri.parse("android-app://iogamestudios.wapa/http/host/path")
         );
         AppIndex.AppIndexApi.start(client, viewAction);
-    }
+    }*/
 
-    @Override
+    /*@Override
     public void onStop() {
         super.onStop();
 
@@ -170,5 +177,5 @@ public class MainActivity extends AppCompatActivity implements android.location.
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
-    }
+    }*/
 }

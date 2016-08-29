@@ -7,48 +7,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="iogamestudios.wapa.ServicesActivity">
+    tools:context="iogamestudios.wapa.ServicesActivity"
+    android:background="@mipmap/wapa">
 
 
-    <HorizontalScrollView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/horizontalScrollView"
-        android:fillViewport="true">
+        android:text="Servicios"
+        android:id="@+id/servicesButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/service0ImageButton"
-                android:src="@mipmap/service0"
-                android:scaleType="center"
-                android:adjustViewBounds="true"
-                android:cropToPadding="false"
-                android:contentDescription="Service0"
-                android:nestedScrollingEnabled="false" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/service1ImageButton"
-                android:src="@mipmap/service1"
-                android:scaleType="center"
-                android:adjustViewBounds="true"/>
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/service2ImageButton"
-                android:src="@mipmap/service2"
-                android:scaleType="center"
-                android:adjustViewBounds="true"/>
-
-        </LinearLayout>
-    </HorizontalScrollView>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mis Citas"
+        android:id="@+id/appointmentsButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

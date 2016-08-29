@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iogamestudios.wapa.ServiceSelection"
+    android:background="@mipmap/wapa">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/makeUpServiceImage"
+                    android:src="@mipmap/service0"
+                    android:adjustViewBounds="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book"
+                    android:id="@+id/makeUpServiceButton"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/makeUpLabel"
+                    android:layout_alignEnd="@+id/makeUpLabel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="MAKE UP"
+                    android:id="@+id/makeUpLabel"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hairServiceImage"
+                    android:src="@mipmap/service1"
+                    android:adjustViewBounds="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book"
+                    android:id="@+id/hairServiceButton"
+                    android:layout_alignBottom="@+id/hairServiceImage"
+                    android:layout_toEndOf="@+id/horizontalScrollView"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/makeUpAndHairImage"
+                    android:src="@mipmap/service2"
+                    android:adjustViewBounds="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/makeUpAndHairButton"
+                    android:layout_alignBottom="@+id/makeUpAndHairImage" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
